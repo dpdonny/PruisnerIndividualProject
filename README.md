@@ -6,4 +6,10 @@ Features are listed in order of page lineage:
  - Show Saved Vehicles -> Display vehicles that the user has saved
  - Select a Favorite -> Select favorite vehicles to the session
  - Show Your Favorites -> Display favorite vehicles that were saved to the session
- - Upload an Image -> Upload a picture of a vehicle. 
+ - Upload an Image -> Upload a picture of a vehicle.
+
+To run this code in Visual Studio:
+ - Copy URL from the code on this github page
+ - Clone repository in Visual Studio with URL
+ - When project opens, set Start_Page.aspx as start page
+ - Page will respond with an error if you don't specify a start page
