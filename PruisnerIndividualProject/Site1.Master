@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="PruisnerIndividualProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="styles/StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="header">
+        <h1>Vehicles</h1>
+        <p>
+            <a class='link' href="Start_Page.aspx">Home</a>
+            <a class='link' href="selector.aspx">Donny's Vehicles</a>
+            <a class='link' href="entry.aspx">Save Your Own Vehicle</a>
+            <a class='link' href="user_display.aspx">Show Saved Vehicles</a>
+            <a class='link' href="favorite.aspx">Select a Favorite</a>
+            <a class='link' href="favorite_display.aspx">Show Your Favorites</a>
+            <a class='link' href="upload.aspx">Upload an Image</a>
+        </p>
+    </div>
+    
+    <form id="form1" runat="server">
+        <div id="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

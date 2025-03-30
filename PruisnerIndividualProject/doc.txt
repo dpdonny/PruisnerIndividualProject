@@ -1,0 +1,42 @@
+﻿If this setting doesn't transfer when I zip the file, make sure that Start_Page.aspx is set as the start page
+
+
+
+
+My project topic is vehicle customization. My goal is to create an interactive web page that allows a user to customize a vehicle of their choosing. The options for the page may be limited since there are way more vehicle options than I have the time or energy to think about including. 
+
+The contents of my page require the following: 
+	1 main page
+	3 Form pages
+	3 Display pages
+	Navigation between pages
+	1 Master page
+	1 Documentation file(This file)
+
+
+
+My pages:
+
+	Main page: Start_Page.aspx
+		This page is the start page and explains the purpose and features of the website. 
+	
+	Content:
+
+		selector.aspx
+			This page displays vehicles that are saved in the array as well as a random vehicle and image from the initial array. 
+		user_display.aspx
+			This page displays all of the vehicles that the user has saved to the session. Also shows any images that the user has uploaded
+		favorite_display.aspx
+			This page displays the favorites that the user has selected
+	
+	Forms:
+
+		entry.aspx
+			This page allows a user to save a vehicle that they own or are interested in.
+		favorite.aspx
+			This page allows a user to select either their own vehicle or one of the initiated vehicles as their "favorite"
+		upload.aspx
+			This page allows a user to upload an image to the website. It saves the file path in the session and then uses that file path in the user_disply.aspx page to display the image.
+		
+
+	Header and navigation are on the master page. 
