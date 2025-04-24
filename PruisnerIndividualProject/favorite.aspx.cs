@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace PruisnerIndividualProject
 {
     public partial class favorite : System.Web.UI.Page
