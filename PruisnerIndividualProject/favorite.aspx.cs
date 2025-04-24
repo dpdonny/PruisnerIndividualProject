@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -42,10 +41,6 @@ namespace PruisnerIndividualProject
                         q++;
                     }
             }
-            else
-            {
-                display += "You have no saved vehicles!<br>";
-            }
         }
         protected void btnform_Click(object sender, EventArgs e)
         {
@@ -53,6 +48,7 @@ namespace PruisnerIndividualProject
             String favoritecounter = Session["favoritecounter"].ToString();
             int fcounter = favoritecounter.Length;
             Session["Favorite" + fcounter] = DropDownList1.SelectedItem;
+            lblresults.Text = "Vehicle added to your favorites!";
         }
     }
 }

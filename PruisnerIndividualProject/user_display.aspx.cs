@@ -32,10 +32,6 @@ namespace PruisnerIndividualProject
                     lblresults.Text += "<img class='img1' src = '" + Session["image" + (j + 1)].ToString() + "'>";
                 }
             }
-
-
-
-
         }
     }
 }

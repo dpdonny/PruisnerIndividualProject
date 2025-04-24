@@ -9,7 +9,6 @@ namespace PruisnerIndividualProject
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
             //display all initiated vehicles
@@ -23,11 +22,7 @@ namespace PruisnerIndividualProject
                 }
                 lbldisplay.Text = display;
             }
-
-            
-
         }
-
         protected void randvehiclebtn_Click(object sender, EventArgs e)
         {
             //display a random vehicle with an image from the initiated vehicles in the session
