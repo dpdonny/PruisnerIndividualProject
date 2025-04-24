@@ -27,35 +27,26 @@ namespace PruisnerIndividualProject
                         DropDownList1.Items.Insert(j, Session["savedvehicles" + (j)].ToString());
                     }
                 }
-                
             }else
             {
                 display += "There are not currently any saved vehicles from the creator";
             }
             lblform.Text = display;
-            
             //Check to see if user entered vehicles exist. If so, display them
             if (Session["counter"] != null)
             {
                 string counter = Session["counter"].ToString();
                     for (int i = listcounter; i < (counter.Length + listcounter); i++)
                     {
-                        //DropDownList1.Items.Add(Session["Vehicle" + (i + 1)].ToString());
                         DropDownList1.Items.Insert(i, Session["Vehicle" + (q + 1)].ToString());
-                    q++;
+                        q++;
                     }
-                
-
             }
             else
             {
                 display += "You have no saved vehicles!<br>";
             }
-
-
-            
         }
-
         protected void btnform_Click(object sender, EventArgs e)
         {
             Session["favoritecounter"] += "1";

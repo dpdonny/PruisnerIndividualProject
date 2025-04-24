@@ -53,13 +53,6 @@ namespace PruisnerIndividualProject
                     break;
 
             }
-            string counter = Session["vehiclecounter"].ToString();
-            string display = "";
-            for (int i = 0; i < counter.Length; i++)
-            {
-                display += Session["savedvehicle" + (i)] + "<hr>";
-            }
-            Label1.Text = display;
         }
     }
 }
